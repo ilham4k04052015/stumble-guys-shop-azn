@@ -26,7 +26,7 @@ const PRODUCTS = [
   { id: 'skin-epic', title: 'Эпический скин', description: 'Выделяйся в лобби', price: 6.99, image: 'https://raw.githubusercontent.com/one-aalam/assets-cdn/main/stumble-guys/skins/epic.jpg', images: [
     'https://raw.githubusercontent.com/one-aalam/assets-cdn/main/stumble-guys/skins/epic.jpg'
   ] },
-  { id: 'pass', title: 'Stumble Pass', description: 'Сезонные награды', price: 9.99, image: 'https://static.wikia.nocookie.net/stumbleguys/images/a/a5/Battle_Pass_-_Icon_-_Stumble_Guys.png/revision/latest?cb=20220802100839', images: [
+  { id: 'pass', title: 'Stumble Pass', description: 'Сезонные награды', price: 9.99, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlvmaS4JtuS0v9XcMbb4dmV9FHFitLu2jUFkMG6qIFNf4cjN3jXWcN483qj_E7QsVscO4&usqp=CAU', images: [
     'https://i.ytimg.com/vi/9dfaItJPemw/maxresdefault.jpg',
     'https://i.ytimg.com/vi/fPgX4UwiOxs/maxresdefault.jpg'
   ] },
