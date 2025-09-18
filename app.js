@@ -84,11 +84,11 @@ function renderProducts() {
     const card = document.createElement('div');
     card.className = 'product-card';
     card.innerHTML = `
-      <img src="${p.image}" alt="${p.title}" data-gallery-open="${p.id}" data-index="0">
+      <img src="${p.image}" alt="${p.title}" referrerpolicy="no-referrer" data-gallery-open="${p.id}" data-index="0" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400?text=Image+unavailable';">
       <div class="product-title">${p.title}</div>
       <div class="product-meta">${p.description}</div>
       <div class="price">${azn.format(p.price)}</div>
-      ${p.images && p.images.length > 1 ? `<div class="thumbs">${p.images.map((src, idx) => `<img src="${src}" alt="${p.title} ${idx+1}" data-gallery-open="${p.id}" data-index="${idx}">`).join('')}</div>` : ''}
+      ${p.images && p.images.length > 1 ? `<div class="thumbs">${p.images.map((src, idx) => `<img src="${src}" alt="${p.title} ${idx+1}" referrerpolicy=\"no-referrer\" data-gallery-open=\"${p.id}\" data-index=\"${idx}\" onerror=\"this.onerror=null; this.style.opacity=0.4;\">`).join('')}</div>` : ''}
       <div class="actions">
         <button class="primary" data-add="${p.id}">Добавить</button>
         <button class="secondary" data-buy="${p.id}">Купить сейчас</button>
